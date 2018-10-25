@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 8</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let summa;
+
+  const first = +getRand(5)+1;
+  const second = +getRand(5)+1;
+
+  summa=first+second;
+  alert('Numero uno '+first+', numero duo '+second+'\n Summa on '+summa);
+
+  function getRand(max){
+    return Math.floor(Math.random()*Math.floor(max));
+
+  }
+</script>
+</body>
+</html>
