@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 4</title>
+</head>
+<body>
+
+<script>
+  'use strict';
+  let lompa;
+  lompa=0;
+
+  const lomp = +prompt ('Lompakon saldo?');
+  const bus = +prompt ('Bussilipun hinta?');
+
+  if (lomp>bus){
+    document.write('<p>Hyvää matka!</p>');
+    lompa=lomp-bus;
+  }
+
+  else {
+    lompa=lomp;
+  }
+
+  document.write('<p>Lompakossa on jäljellä <b>'+ lompa + '</b> euroa.</p>');
+</script>
+</body>
+</html>
