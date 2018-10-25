@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 2</title>
+</head>
+<body>
+
+<script>
+  'use strict';
+  let text;
+
+  const where = +getRand(3);
+
+  switch (where) {
+    case 0:
+      text='Rohkelikko';
+      break;
+    case 1:
+      text='Luihuinen';
+      break;
+    case 2:
+      text='Puuskupuh';
+      break;
+    case 3:
+      text='Korppinkynsi';
+  }
+  const name = prompt ('Anna nimesi?');
+
+  document.write('<p><b>'+ name + '</b>, olet <b>'+text+'</b>.</p>');
+
+
+  function getRand(max){
+    return Math.floor(Math.random()*Math.floor(max));
+
+  }
+</script>
+</body>
+</html>
