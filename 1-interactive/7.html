@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 7</title>
+</head>
+<body>
+
+<script>
+  'use strict';
+  let summa, loppusumma;
+
+  const saldo = +prompt ('Tilin saldo?');
+  const percent = +prompt ('Vuoden korkoprosenti');
+
+  summa=Number.parseFloat(saldo*(percent/100)).toFixed(2);
+  loppusumma=Number.parseFloat(saldo+(saldo*(percent/100))).toFixed(2);
+
+  document.write('<p>Vuodessa korkoa keräänty <b>'+ summa + '</b> euroa ja vuoden lopussa tilillä on <b>'+loppusumma+'</b> euroa.</p>');
+</script>
+
+</body>
+</html>
