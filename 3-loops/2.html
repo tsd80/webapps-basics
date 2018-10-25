@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 2</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let luku=-1;
+
+  while (luku < 0) {
+    luku = +prompt ('Tilin saldo?');
+    luku = Number(Math.sqrt(luku)).toFixed(2);
+  }
+
+  document.write('<p>Neliöjuuri on <b>'+ luku + '</b>.</p>');
+</script>
+</body>
+</html>
