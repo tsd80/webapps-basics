@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 9</title>
+</head>
+<body>
+
+<script>
+  'use strict';
+  let kolmenum, nelinum, i, temp;
+  kolmenum=nelinum='';
+
+  for (i = 0; i < 3; i++) {
+    temp = +getRand(9);
+    kolmenum = kolmenum+temp.toString();
+  }
+
+  for (i = 0; i < 4; i++) {
+    temp=+getRand(5)+1;
+    nelinum=nelinum+temp.toString();
+  }
+
+  document.write('<p>Kolmenumeroinen: <b>'+ kolmenum + '</b><br /> Nelinumeroinen: <b>'+nelinum+'</b></p>');
+
+
+  function getRand(max){
+    return Math.floor(Math.random()*Math.floor(max));
+
+  }
+</script>
+</body>
+</html>
