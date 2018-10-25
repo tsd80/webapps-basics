@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 7</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let i, num;
+
+  for (i=1; i<=25;i++){
+    num = 4*i-getRand(4);
+    document.write(i+' luku: '+num+' <br />');
+  }
+
+  function getRand(max){
+    return Math.floor(Math.random()*Math.floor(max));
+  }
+</script>
+
+</body>
+</html>
