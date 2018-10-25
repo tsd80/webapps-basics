@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 6</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let i=0, med=0, nums=[];
+
+
+  do {
+    nums[i] = +prompt ('Anna luku. 0 -> lopetus');
+    i++;
+  } while (nums[i-1]!=0);
+
+  nums.pop();
+  nums.sort();
+
+  if (nums.length%2===0){
+    med=(nums[(nums.length/2)-1] + nums[nums.length/2]/2);
+  }
+  else {
+    med=nums[Math.floor(nums.length/2)];
+  }
+
+  document.write('Mediaani on '+med);
+
+</script>
+</body>
+</html>
