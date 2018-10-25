@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 3</title>
+</head>
+<body>
+
+<script>
+  'use strict';
+  let text;
+
+  const sex = prompt ('Sukupuolisi (mies/nainen)?');
+  const hemo = +prompt ('Hemoglobiiniarvo?');
+
+  if (sex==='mies') {
+    if (hemo<134) {
+      text='alhainen';
+    }
+    else if (hemo>195){
+      text = 'korkea';
+    }
+    else {
+      text = ' normaali';
+    }
+  }
+
+  else {
+    if (hemo <117){
+      text='alhainen';
+    }
+    else if (hemo>175){
+      text='korkea';
+    }
+    else {
+      text='normaali';
+    }
+
+  }
+
+
+  document.write('<p>Hemoglobiiniarvosi on <b>'+ text + '</b>.</p>');
+</script>
+
+</body>
+</html>
