@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 6</title>
+</head>
+<body>
+
+<script>
+  'use strict';
+  let gramm, kilo;
+
+  const leivisko = +prompt ('Leiviskö?');
+  const naula = +prompt ('Naula?');
+  const luoti = +prompt ('Luoti?');
+
+  gramm=((leivisko*20*32)+(naula*32)+luoti)*13.3;
+  kilo=Math.floor(gramm/1000);
+  gramm=Number.parseFloat(gramm-(kilo*1000)).toFixed(2);
+
+  document.write('<p>Massa nykymittojen mukaan:<br /> '+ kilo + ' kilogramma ja '+gramm+' gramma.</p>');
+</script>
+
+</body>
+</html>
