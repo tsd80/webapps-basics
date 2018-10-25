@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 5</title>
+</head>
+<body>
+
+<script>
+  'use strict';
+  let i,  used=[], num;
+
+  for (i = 0; i<1000; i++) {
+    used[i] = false;
+  }
+
+  while (true) {
+    num = +prompt ('Gimme the numba!');
+    if (used[num-1] === true) {
+      break;
+    }
+    else {
+      used[num-1] = true;
+    }
+  }
+</script>
+</body>
+</html>
