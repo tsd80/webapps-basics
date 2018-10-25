@@ -5,20 +5,25 @@
     <title>Tehtävä 2</title>
 </head>
 <body>
+
 <script>
   'use strict';
-  let i, names=[];
+  let i,x, names=[];
 
-  const first = +getRand(5)+1;
-  const second = +getRand(5)+1;
+  const num = +prompt ('Osallistujien määrä?');
 
-  summa=first+second;
-  alert('Numero uno '+first+', numero duo '+second+'\n Summa on '+summa);
-
-  function getRand(max){
-    return Math.floor(Math.random()*Math.floor(max));
-
+  for (i=0;i<num;i++){
+    x=i+1;
+    names[i] = prompt ('Anna nimi nro '+x);
   }
+
+  document.write('<ol>');
+  for (i=0;i<num;i++){
+    document.write('<li>'+names[i]+'</li>');
+  }
+  document.write('</ol>');
+
 </script>
+
 </body>
 </html>
