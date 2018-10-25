@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 4</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let i, num, total=0;
+
+  const number = +prompt ('Kutioiden määrä?');
+
+  for (i=1;i<=number;i++){
+    num = +getRand(6)+1;
+    total += num;
+    document.write(i+' luku on: <b>'+num+'</b> <br />');
+  }
+
+  document.write('<p>Loppusumma on <b>'+ total + '</b></p>');
+
+  function getRand(max){
+    return Math.floor(Math.random()*Math.floor(max));
+
+  }
+</script>
+</body>
+</html>
