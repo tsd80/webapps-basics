@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 3</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let i;
+
+  const start = +prompt ('Aloitusvuosi?');
+  const end = +prompt ('Lopetusvuosi?');
+
+  if (start<end) {
+    document.write('<ul>');
+    for (i = start; i <= end; i++) {
+
+      if (i%400===0){
+        document.write('<li>'+i+'</li>');
+      }
+      else if (i%100===0){
+      }
+      else if (i%4===0){
+        document.write('<li>'+i+'</li>');
+      }
+      else {
+      }
+    }
+    document.write('</ul>');
+  }
+
+</script>
+</body>
+</html>
