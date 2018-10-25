@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 5</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let i, text='on';
+
+  const num = +prompt ('Luku?');
+
+  for (i=2;i<num;i++){
+    if (num%i===0){
+      text='ei ole';
+    }
+
+  }
+
+  document.write('<p>Luku <b>'+ num + '</b> '+text+' alkuluku</p>');
+
+</script>
+</body>
+</html>
