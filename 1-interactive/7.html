@@ -17,6 +17,10 @@
   loppusumma=Number.parseFloat(saldo+(saldo*(percent/100))).toFixed(2);
 
   document.write('<p>Vuodessa korkoa keräänty <b>'+ summa + '</b> euroa ja vuoden lopussa tilillä on <b>'+loppusumma+'</b> euroa.</p>');
+
+  function getRand(max){
+    return Math.floor(Math.random()*Math.floor(max));
+  }
 </script>
 
 </body>
