@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 6</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let i,j,counter=0, subsum=0, rounds=10000;
+
+  const times = +prompt ('Noppien määrä?');
+  const sum = +prompt ('Summa, joka kiinosta?');
+
+  for (i=1; i<=rounds;i++){
+    for (j=0;j<times;j++){
+      subsum += getRand(6)+1;
+    }
+    if (subsum===sum){
+      counter++;
+    }
+    subsum=0;
+  }
+
+
+  document.write('<p> <b>'+rounds+'</b> yrityksestä ja <b>'+times+'</b> nopan heitosta summasi <b>'+ sum + '</b> osui <b>'+counter+'</b> kertaa</p>');
+
+  function getRand(max){
+    return Math.floor(Math.random()*Math.floor(max));
+  }
+</script>
+</body>
+</html>
