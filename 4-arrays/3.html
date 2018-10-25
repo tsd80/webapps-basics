@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 3</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let i, x, names=[], num=6;
+
+  for (i=0;i<num;i++){
+    x=i+1;
+    names[i] = prompt ('Anna koiran nro '+x+' nimi');
+  }
+
+  names = names.sort().reverse();
+
+  document.write('<ul>');
+  for (i=0;i<num;i++){
+    document.write('<li>'+names[i]+'</li>');
+  }
+  document.write('</ul>');
+</script>
+</body>
+</html>
