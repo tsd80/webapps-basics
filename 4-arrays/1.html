@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 1</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let i, x, num = [], to=5;
+
+  for (i=0; i<to;i++){
+    x=i+1;
+    num[i] = prompt ('Anna numero '+x);
+  }
+  num = num.reverse();
+
+  for (i=0;i<to;i++){
+    x=i+1;
+    document.write('Numero '+x+' on '+num[i]+'<br />');
+  }
+
+</script>
+</body>
+</html>
