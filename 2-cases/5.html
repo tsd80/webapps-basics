@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 5</title>
+</head>
+<body>
+
+<script>
+  'use strict';
+  let sq, text;
+  text='';
+
+  const saldo = confirm ('Lasketaanko neliöjuuri');
+
+  if (saldo){
+    const num = +prompt ('Anna luku');
+    if (num>=0){
+      sq=Math.sqrt(num);
+      text=num+':n neliöjuuri on '+sq;
+    }
+    else {
+      text='Negatiivisen luvun neliöjuuri ei ole määritelty';
+    }
+  }
+
+  else {
+    text='Neljöjuurta ei lasketa.';
+
+  }
+  document.write(text);
+</script>
+</body>
+</html>
