@@ -254,6 +254,8 @@ main ul{
     flex-flow: row wrap;
     justify-content: space-around;
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 main ul li {
@@ -263,22 +265,22 @@ main ul li {
 
 figure {
     position: relative;
-    margin: 7px 0;
+    margin: 5px;
 }
 
 figcaption {
     position: absolute;
-    top: -19px;
-    left: 0;
+    top: 0;
     width: 100%;
 }
 
 figcaption h3 {
-    padding: 5px 0 5px 5px;
+    padding: 5px;
+    margin: 0;
     background-color: rgba(156, 184, 159, 0.7);
 }
 
-@media all and (max-width: 500px){
+@media all and (max-width: 960px){
     body {
         flex-direction: column;
     }
