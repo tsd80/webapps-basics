@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 3</title>
+</head>
+<body>
+<script>
+  'use strict';
+  const luku = +prompt ('Anna luku');
+
+  let itse = itseisarvo(luku);
+  document.write('Sen itseisarvo on '+itse);
+
+  function itseisarvo (letin) {
+    if (letin<0) {return -letin}
+    else {return letin}
+  }
+
+</script>
+</body>
+</html>
