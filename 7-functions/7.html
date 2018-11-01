@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehävä 7</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let nums = [3,-6,7,-8,4,5];
+
+  let ret = parilliset(nums);
+  console.log(ret);
+
+  function parilliset(letin) {
+    let i, ret=[];
+
+    for (i=0; i<letin.length;i++){
+      if (letin[i]%2===0) {
+        ret.push(letin[i]);
+      }
+    }
+    return ret;
+  }
+
+</script>
+</body>
+</html>
