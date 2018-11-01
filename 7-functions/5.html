@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 5</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let names = ["Viivi", "Saara","Yrjö-Pekka"];
+
+
+  let ret = liita(names);
+  document.write('Merkkijono on "'+ret+'"');
+
+  function liita(letin) {
+    let i, ret="";
+    for (i=0; i<letin.length;i++){
+      ret += letin[i];
+    }
+    return ret;
+  }
+
+</script>
+</body>
+</html>
