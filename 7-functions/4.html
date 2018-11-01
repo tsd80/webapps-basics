@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 4</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let i, luvut = [];
+  for (i=0;i<3;i++){
+    luvut[i]= +prompt ('Anna luku');
+  }
+
+  let ret = maxim(luvut);
+  document.write('Maksimi on '+ret);
+
+  function maxim(letin) {
+    return Math.max.apply(null,letin);
+  }
+
+</script>
+</body>
+</html>
