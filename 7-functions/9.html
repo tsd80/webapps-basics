@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 9</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let i, fibo = [];
+
+  const fib = (n) => {
+    if (n <= 2){
+      return 1
+    }
+    return fib(n - 1) + fib (n - 2)
+  };
+
+  const luku = +prompt ('Anna Fibonaccin lukumäärä');
+
+  for (i=1;i<=luku;i++){
+    fibo.push(fib(i));
+  }
+
+  console.log(fibo.length);
+
+  for (i=0;i<fibo.length;i++){
+    document.write("luku on "+ fibo[i]+"<br />");
+  }
+
+
+
+</script>
+</body>
+</html>
