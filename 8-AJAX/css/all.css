@@ -1,0 +1,96 @@
+body {
+    background: #3f3f3f;
+    color: #e3e3e3;
+    padding: 0;
+    margin: 0;
+}
+
+#hakuteksti {
+    background-color: #575757;
+    border: 1px #909090 solid;
+    color: #e3e3e3;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 0.5em 1em;
+    height: 25px;
+    width: 150px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+#search_button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 1em;
+    margin: 10px;
+}
+
+#search {
+    border-bottom: 1px #909090 dashed;
+}
+
+
+#shows {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#shows .single:nth-child(odd) {
+    background: #575757;
+}
+
+#shows .single:nth-child(even) {
+    background: #505050;
+}
+
+
+#shows .single {
+    border: 0 #ffae00 solid;
+    width: 33.33%;
+    padding: 0;
+    margin: 0;
+}
+
+#shows h1 {
+    font-size: 1.2em;
+    padding: 15px 0 0 15px;
+    margin: 0;
+    color: #e3e3e3;
+}
+
+#shows img {
+    padding: 0;
+    margin: 15px;
+}
+
+#shows a {
+    text-decoration: none;
+    color: #222222;
+}
+
+#shows .summary {
+    padding: 0 15px;
+    margin: 0;
+}
+
+.summary p {
+    padding: 0 0 5px 0;
+    margin: 0;
+}
+
+.genre {
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 0.9em;
+    font-style: oblique;
+}
+
+@media all and (max-width: 720px){
+    #shows {
+        flex-direction: column;
+    }
+    #shows .single {
+        width: 100%;
+    }
+}
