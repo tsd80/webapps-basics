@@ -5,9 +5,9 @@ function search(){
   //catching value of search field and process it
   let what = document.getElementById('hakuteksti').value;
   fetch('http://api.tvmaze.com/search/shows?q='+what)
-  .then(function(answer){return answer.json();})
-  .then(function(json){show_shows(json);})
-  .catch(function(error){console.log(error);});
+  .then((answer)=> {return answer.json();})
+  .then((json) => {show_shows(json);})
+  .catch((error) =>{console.log(error);});
 }
 
 function show_shows(input) {
